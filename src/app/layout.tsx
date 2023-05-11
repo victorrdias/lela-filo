@@ -1,6 +1,8 @@
 "use client";
 import { Inter } from "next/font/google";
 import { ChakraProvider } from "@chakra-ui/react";
+import theme from "@/theme";
+import "../theme/styles.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <ChakraProvider>{children}</ChakraProvider>
+        <ChakraProvider theme={theme}>{children}</ChakraProvider>
       </body>
     </html>
   );

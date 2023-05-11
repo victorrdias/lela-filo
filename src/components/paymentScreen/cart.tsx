@@ -25,7 +25,7 @@ const cart = () => {
   const bgColor = useColorModeValue("gray.50", "whiteAlpha.50");
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const secondaryTextColor = useColorModeValue("gray.600", "gray.400");
-  console.log("bg", bgColor);
+
   return (
     <VStack
       bgColor={bgColor}
