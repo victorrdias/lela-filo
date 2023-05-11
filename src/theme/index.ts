@@ -34,7 +34,7 @@ const theme = extendTheme(
   {
     colors: {
       accent: {
-        50: "#f5fee5",
+        50: "#233118",
         100: "#e1fbb2",
         200: "#cdf781",
         300: "#b8ee56",
