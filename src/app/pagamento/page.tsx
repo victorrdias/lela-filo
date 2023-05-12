@@ -2,7 +2,7 @@
 
 import Cart from "@/components/paymentScreen/cart";
 import Details from "@/components/paymentScreen/details";
-import { Container, Flex, Stack, VStack } from "@chakra-ui/react";
+import { Container, Flex } from "@chakra-ui/react";
 
 export default function Payment() {
   return (

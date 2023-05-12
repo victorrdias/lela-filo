@@ -32,6 +32,11 @@ const brandRing = {
 };
 const theme = extendTheme(
   {
+    styles: {
+      global: (props: any) => ({
+        backgroundColor: mode("primary.50", "accent.700")(props),
+      }),
+    },
     colors: {
       accent: {
         100: "#e1fbb2",

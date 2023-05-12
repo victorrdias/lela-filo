@@ -1,4 +1,3 @@
-"use client";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import {
   Heading,
