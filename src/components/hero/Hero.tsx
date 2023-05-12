@@ -11,28 +11,32 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import React from "react";
+import Header from "../header/Header";
 
 const Hero = () => {
   const router = useRouter();
 
   return (
     <Container maxW="container.xl" p="0">
-      <HStack h={{ base: "auto", md: "100vh" }}>
+      <HStack
+        h={{ base: "auto", md: "100vh" }}
+        justifyContent="space-between"
+        alignItems="space-between"
+      >
         <VStack
+          zIndex="1"
           py={[10, 20, 30]}
           pr="10"
           h="100%"
-          w="50%"
+          w="40%"
+          minW={{ md: "50vw", lg: "40vw" }}
           bgColor="primary.50"
           alignItems="flex-start"
           color="white"
           justifyContent="space-between"
           alignContent="space-between"
         >
-          <HStack justifyContent="space-between" w="100%">
-            <Heading>Lela Filo</Heading>
-            <Text margin="0">Produtos</Text>
-          </HStack>
+          <Header />
           <VStack spacing={10} alignItems="flex-start">
             <Heading>Quem somos</Heading>
             <Text>
@@ -50,8 +54,16 @@ const Hero = () => {
             </Button>
           </VStack>
         </VStack>
-        <Flex h="100%" minW="60%">
-          <Image src="hero-img.png" objectFit="fill" alt="foto" />
+        <Flex h="100%" w="60%">
+          <Image
+            maxH="100vh"
+            position="absolute"
+            top="0"
+            right="0"
+            src="hero-img.png"
+            objectFit="fill"
+            alt="foto"
+          />
         </Flex>
       </HStack>
     </Container>
