@@ -15,7 +15,7 @@ const Hero = () => {
       <VStack
         h="100%"
         w="40%"
-        bgColor="accent.50"
+        bgColor="primary.50"
         alignItems="flex-start"
         color="white"
         p={[10, 20, 50]}
@@ -29,7 +29,7 @@ const Hero = () => {
         <VStack spacing={10} alignItems="flex-start">
           <Heading>Quem somos</Heading>
           <Text>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat
