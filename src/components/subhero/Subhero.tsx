@@ -31,21 +31,28 @@ const Subhero = () => {
       </HStack>
       <HStack gap="8">
         <SubheroCard
-          title={"titulo"}
+          title={"Vasos"}
           image={"zuru"}
           content={
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss varius enim in eros elementum tristique"
           }
         />
         <SubheroCard
-          title={"titulo"}
+          title={"Plantas"}
           image={"zuru"}
           content={
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss varius enim in eros elementum tristique"
           }
         />
         <SubheroCard
-          title={"titulo"}
+          title={"Eventos"}
+          image={"zuru"}
+          content={
+            " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss varius enim in eros elementum tristique"
+          }
+        />
+        <SubheroCard
+          title={"Oficinas"}
           image={"zuru"}
           content={
             " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendiss varius enim in eros elementum tristique"

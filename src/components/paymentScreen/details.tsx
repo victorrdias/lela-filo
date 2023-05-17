@@ -60,7 +60,7 @@ const details = () => {
           <Checkbox defaultChecked>Shio to billing</Checkbox>
         </GridItem>
         <GridItem colSpan={2}>
-          <Button variant="primary" size="lg" w="full">
+          <Button variant="green" size="lg" w="full">
             Fechar pedido
           </Button>
         </GridItem>

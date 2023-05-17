@@ -41,7 +41,7 @@ export const Main = ({ children, title, ...rest }: MainLayoutProps) => {
       w="100%"
       maxW="100vw"
       direction="column"
-      bgColor="primary.50"
+      bgColor="green.50"
       px={[10, 20, 30]}
       {...rest}
     >
