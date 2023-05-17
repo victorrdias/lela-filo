@@ -10,8 +10,11 @@ const inputSelectStyles = {
   variants: {
     filled: {
       field: {
+        borderRadius: "0",
+        bgColor: "green.50",
         _focus: {
-          borderColor: "accent",
+          bgColor: "green.50",
+          borderColor: "accent.800",
         },
       },
     },
@@ -34,7 +37,10 @@ const theme = extendTheme(
   {
     styles: {
       global: (props: any) => ({
-        backgroundColor: mode("primary.50", "accent.700")(props),
+        backgroundColor: mode("green.50", "accent.100")(props),
+        body: {
+          backgroundColor: "green.50",
+        },
       }),
     },
     colors: {
@@ -49,8 +55,12 @@ const theme = extendTheme(
         800: "#3c5e00",
         900: "#203300",
       },
-      primary: {
+      green: {
         50: "#233118",
+        100: "#11180c",
+      },
+      secundary: {
+        50: "#2D3748",
       },
     },
     fonts: {
@@ -58,9 +68,16 @@ const theme = extendTheme(
       body: `Inter, ${base.fonts?.body}`,
     },
     components: {
+      // Heading: {
+      //   variants: {
+      //     head: {
+      //       fontSize: {{ base: "18px", md: "24px", lg: "xl" }},
+      //     },
+      //   },
+      // },
       Button: {
         variants: {
-          primary: (props: any) => ({
+          green: (props: any) => ({
             rounded: "none",
             ...brandRing,
             color: mode("white", "gray.700")(props),
@@ -72,6 +89,20 @@ const theme = extendTheme(
               backgroundColor: mode("accent.700", "accent.400"),
             },
           }),
+        },
+      },
+      Textarea: {
+        variants: {
+          filled: {
+            _focus: {
+              bgColor: "green.50",
+              borderColor: "accent.800",
+            },
+            borderRadius: "0",
+            field: {
+              bgColor: "green.50",
+            },
+          },
         },
       },
       Input: { ...inputSelectStyles },

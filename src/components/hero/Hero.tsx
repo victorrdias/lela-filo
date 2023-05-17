@@ -30,7 +30,7 @@ const Hero = () => {
           h="100%"
           w="40%"
           minW={{ md: "50vw", lg: "40vw" }}
-          bgColor="primary.50"
+          bgColor="green.50"
           alignItems="flex-start"
           color="white"
           justifyContent="space-between"
@@ -48,7 +48,7 @@ const Hero = () => {
             <Button
               onClick={() => router.push("/produtos")}
               w="full"
-              variant="primary"
+              variant="green"
             >
               Conheca nossos produtos
             </Button>
